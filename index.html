@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <main class="container">
+      <input
+        list="cities"
+        type="search"
+        name="search"
+        id="search"
+        placeholder="Search City"
+        autocomplete="off"
+      />
+      <datalist id="cities"> </datalist>
+      <article class="Current">
+        <p class="Cityname">City</p>
+        <p class="temp">--</p>
+        <p class="desc">Desc</p>
+        <p class="High-low-temp">High-Low Temp</p>
+      </article>
+      <article class="hourly">
+        <h2>Hourly Forecast</h2>
+        <section class="hourly-container">
+          <article>
+            <h3 class="time">Now</h3>
+            <p class="icon">--</p>
+            <p class="hourly-temp">--</p>
+          </article>
+        </section>
+      </article>
+      <article class="Five-day">
+        <h2>5 day Forecast</h2>
+        <section class="Five-day-container">
+          <article class="day-wise-forecast">
+            <h2>Today</h2>
+            <p class="icon">--</p>
+            <p class="min">--</p>
+            <p class="max">--</p>
+          </article>
+          <article class="day-wise-forecast">
+            <h2>Wed</h2>
+            <p class="icon">--</p>
+            <p class="min">--</p>
+            <p class="max">--</p>
+          </article>
+        </section>
+      </article>
+      <article class="feelslike">
+        <h2>FeelsLike</h2>
+        <p class="feelslike-temp">--</p>
+      </article>
+      <article class="humidity">
+        <h2>Humidity</h2>
+        <p class="Humidity">--</p>
+      </article>
+      <article class="Sunset">
+        <h2 id="dynamic-title"></h2>
+        <p class="time">--</p>
+      </article>
+      <script src="main.js"></script>
+    </main>
+  </body>
+</html>
