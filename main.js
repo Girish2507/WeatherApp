@@ -154,10 +154,10 @@ const loadSunTime = ({ dt, sys: { sunrise, sunset } }) => {
   const newTime = realTime(dateTime);
   if (newTime > realTime(sunset)) {
     sunTime.querySelector(".time").textContent = realTime(sunrise);
-    dynamicContent.textContent += phrases[0];
+    dynamicContent.textContent = phrases[0];
   } else {
     sunTime.querySelector(".time").textContent = realTime(sunset);
-    dynamicContent.textContent += phrases[1];
+    dynamicContent.textContent = phrases[1];
   }
 };
 
