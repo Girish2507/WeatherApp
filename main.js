@@ -10,7 +10,7 @@ const phrases = ["Sunrise", "Sunset"];
 
 const getCityUsingGeoLocation = async (searchText) => {
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${searchText}&limit=5&appid=${API_Key}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${searchText}&limit=5&appid=${API_Key}`
   );
   return response.json();
 };
